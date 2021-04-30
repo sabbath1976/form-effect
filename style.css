@@ -17,3 +17,57 @@ body {
     background: linear-gradient(135deg, #fff6b7 10%, #f6416c 100%) no-repeat
         fixed;
 }
+
+form {
+    width: 30rem;
+    margin: 20vh auto 0;
+    background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+    padding: 4rem;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.input-container {
+    margin-bottom: 2rem;
+    color: #fff;
+    position: relative;
+}
+
+input,
+label {
+    padding: 0.7rem 1.2rem;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 0.1rem solid #e79734;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    font-size: 1.2rem;
+    transition: all 0.45s ease-in-out;
+}
+
+input[type="submit"] {
+    background-color: #e79734;
+    border: none;
+    color: #fff;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    transform: translateY(-1.5rem);
+    font-size: 1rem;
+}
