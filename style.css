@@ -1,0 +1,35 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #fff6b7 10%, #f6416c 100%) no-repeat
+        fixed;
+}
+
+/* Main Styling */
+
+/* Form */
+form {
+    background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+    width: 30rem;
+    padding: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
